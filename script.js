@@ -180,19 +180,25 @@ function sendMessage(){
 
     switch(step){
 
-        case "name":
+       case "name":
 
-            enquiry.name=text;
+    enquiry.name = text;
 
-            step="mobile";
+    step = "mobile";
 
-            input.type="tel";
+    input.type = "tel";
 
-            input.placeholder="10 Digit Mobile Number";
+    input.placeholder = "10 Digit Mobile Number";
 
-            addBot("📱 Please enter your Mobile Number");
+    addBot(`
+        👋 Welcome <b>${enquiry.name} ji </b>! 😊
+        <br><br>
+        Thank you for choosing <b>BS Creative Studio</b>.
+        <br><br>
+        📱 Please enter your 10 Digit Mobile Number.
+    `);
 
-        break;
+break;
 
         case "mobile":
 
@@ -377,7 +383,6 @@ fetch(apiURL, {
 .catch(err => {
     console.error(err);
 });
-
 }
 
 // ===============================

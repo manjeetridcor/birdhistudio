@@ -368,17 +368,14 @@ cursor:pointer;">
 addBot(msg);
 fetch(apiURL, {
     method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
     body: JSON.stringify(enquiry)
 })
-.then(response => response.text())
-.then(result => {
-    console.log("Saved:", result);
+.then(res => res.text())
+.then(data => {
+    console.log("Saved:", data);
 })
-.catch(error => {
-    console.error("Error:", error);
+.catch(err => {
+    console.error(err);
 });
 
 }

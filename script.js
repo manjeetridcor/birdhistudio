@@ -1,5 +1,5 @@
 // ===============================
-// BS Creative Studio ChatBot V2
+// Birdhi Studio ChatBot V2
 // ===============================
 const apiURL = "https://script.google.com/macros/s/AKfycby7Nl3uewMqUkLIm07IqWSZW7sRWIzDOLkUWy0ITSBM_dHGhw_BHfy4leRRde27OuNJ9g/exec";
 const chatArea = document.getElementById("chatArea");
@@ -109,24 +109,27 @@ addBot(`
 
 function showGallery(){
 
+const galleryLink = "https://YOUR-GALLERY-LINK-HERE";
+
 addBot(`
-📸 Gallery
+
+<h3>🖼 Our Gallery</h3>
+
+Take a look at some of our recent work.
 
 <br><br>
 
-Wedding Gallery
-
-<br>
-
-Pre Wedding Gallery
-
-<br>
-
-Birthday Gallery
-
-<br>
-
-Baby Shoot Gallery
+<a href="${galleryLink}" target="_blank"
+style="
+display:inline-block;
+background:#2563eb;
+color:#fff;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;">
+🖼 Open Gallery
+</a>
 
 `);
 
@@ -139,23 +142,48 @@ Baby Shoot Gallery
 function showContact(){
 
 addBot(`
-📞 Mobile
 
-+91 8000190778
+<h3>📞 Contact Us</h3>
 
-<br><br>
-
-📱 WhatsApp
-
-+91 8000190778
+📍 <b>Birdhi Studio</b>
 
 <br><br>
 
-📍 BS Creative Studio
+<a href="tel:+918000190778"
+style="
+display:inline-block;
+background:#2563eb;
+color:#fff;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/918000190778"
+target="_blank"
+style="
+display:inline-block;
+background:#25D366;
+color:#fff;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;">
+💬 WhatsApp
+</a>
+
+<br><br>
+
+📱 Mobile : +91 8000190778
 
 `);
 
 }
+
 // ===============================
 // SEND MESSAGE
 // ===============================
@@ -193,7 +221,7 @@ function sendMessage(){
     addBot(`
         👋 Welcome <b>${enquiry.name} ji </b>! 😊
         <br><br>
-        Thank you for choosing <b>BS Creative Studio</b>.
+        Thank you for choosing <b>Birdhi Studio </b>.
         <br><br>
         📱 Please enter your 10 Digit Mobile Number.
     `);
@@ -320,7 +348,8 @@ let msg=`
 
 let whatsappText=
 
-`BS Creative Studio Booking
+`Birdhi Studio
+ Booking
 
 Service : ${enquiry.service}
 
@@ -402,7 +431,7 @@ function restartChat(){
     chatArea.innerHTML=`
 
 <div class="bot">
-👋 Welcome to BS Creative Studio
+👋 Welcome to Birdhi Studio
 <br><br>
 Please choose a service 👇
 </div>

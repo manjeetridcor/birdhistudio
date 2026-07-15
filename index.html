@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birdhi Studio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="chatbox">
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <div class="logo">
+
+            📷 Birdhi Studio
+
+
+            <div class="online">
+                🟢 Online
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Chat -->
+
+    <div id="chatArea" class="chat-area">
+
+        <div class="bot">
+
+            👋 Welcome to Birdhi Studio
+
+            <br><br>
+
+            Please choose a service 👇
+
+        </div>
+
+        <div class="cards">
+
+            <button onclick="startService('Wedding')">
+                💍 Wedding
+            </button>
+
+            <button onclick="startService('Pre Wedding')">
+                ❤️ Pre Wedding
+            </button>
+
+            <button onclick="startService('Birthday')">
+                🎂 Birthday
+            </button>
+
+            <button onclick="startService('Baby Shoot')">
+                👶 Baby Shoot
+            </button>
+
+            <button onclick="startService('Product Shoot')">
+                📦 Product Shoot
+            </button>
+
+            <button onclick="startService('Videography')">
+                🎥 Videography
+            </button>
+
+            <button onclick="showPackages()">
+                💰 Packages
+            </button>
+
+            <button onclick="showGallery()">
+                🖼 Gallery
+            </button>
+
+            <button onclick="showContact()">
+                📞 Contact
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Typing -->
+
+    <div id="typing" class="typing">
+        Studio is typing...
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <input
+        type="text"
+        id="message"
+        placeholder="Type your message..."
+        autocomplete="off">
+
+        <button onclick="sendMessage()">
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,2 +1,0 @@
-# birdhistudio
-My grandfather studio

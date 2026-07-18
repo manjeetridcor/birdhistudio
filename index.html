@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birdhi Studio AI Assistant</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================
+         Premium Welcome Screen
+    =========================== -->
+
+    <div id="welcomeScreen" class="welcome-screen">
+
+        <div class="overlay"></div>
+
+        <div class="welcome-content">
+
+            <div class="camera-icon">
+                📸
+            </div>
+
+            <h1>Birdhi Studio</h1>
+
+            <h2>Capture Your Beautiful Moments</h2>
+
+            <p>
+                Wedding • Pre Wedding • Birthday • Baby Shoot • Cinematic Films
+            </p>
+
+            <div class="welcome-buttons">
+
+                <button class="start-btn" onclick="startWelcome()">
+                    🚀 Start Chat
+                </button>
+
+                <button class="portfolio-btn"
+                    onclick="showGallery();startWelcome();">
+                    🖼 View Portfolio
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================
+            Main Chat Box
+    =========================== -->
+
+    <div class="chatbox">
+
+        <!-- ==========================
+                Header
+        =========================== -->
+
+        <div class="header">
+
+            <div class="header-left">
+
+                <div class="studio-logo">
+                    📸
+                </div>
+
+                <div class="studio-info">
+
+                    <div class="studio-name">
+                        Birdhi Studio
+                        <span class="verified">✔</span>
+                    </div>
+
+                    <div class="online">
+
+                        <span class="dot"></span>
+
+                        Online Now
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button id="themeToggle" class="theme-btn">
+                🌙
+            </button>
+
+        </div>
+
+        <!-- ==========================
+                Chat Area
+        =========================== -->
+
+        <div id="chatArea" class="chat-area">
+
+           <div class="bot">
+
+<h3>👋 Welcome to Birdhi Studio</h3>
+
+<p>
+मैं आपका <b>AI Studio Assistant</b> हूँ।
+</p>
+
+<p>
+मैं आपकी Booking, Package, Gallery और Pricing में मदद कर सकता हूँ।
+</p>
+
+<p>
+कृपया नीचे से अपनी Service चुनें।
+</p>
+
+</div>
+
+            <div class="cards">
+
+                <button onclick="startService('Wedding')">
+                    💍 Wedding
+                </button>
+
+                <button onclick="startService('Pre Wedding')">
+                    ❤️ Pre Wedding
+                </button>
+
+                <button onclick="startService('Birthday')">
+                    🎂 Birthday
+                </button>
+
+                <button onclick="startService('Baby Shoot')">
+                    👶 Baby Shoot
+                </button>
+
+                <button onclick="startService('Product Shoot')">
+                    📦 Product Shoot
+                </button>
+
+                <button onclick="startService('Videography')">
+                    🎥 Videography
+                </button>
+
+                <button onclick="showPackages()">
+                    💰 Packages
+                </button>
+
+                <button onclick="showGallery()">
+                    🖼 Gallery
+                </button>
+
+                <button onclick="showContact()">
+                    📞 Contact
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ==========================
+              Typing Indicator
+        =========================== -->
+
+      <div id="typing" class="typing">
+
+<div class="typing-dot"></div>
+
+<div class="typing-dot"></div>
+
+<div class="typing-dot"></div>
+
+</div>
+
+        <!-- ==========================
+                Footer
+        =========================== -->
+
+        <div class="footer">
+
+            <input
+                type="text"
+                id="message"
+                placeholder="Type your message..."
+                autocomplete="off">
+
+            <button onclick="sendMessage()">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================
+        Floating WhatsApp Button
+    =========================== -->
+
+    <a href="https://wa.me/918000190778"
+        class="floating-whatsapp"
+        target="_blank">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+    <!-- ==========================
+            JavaScript
+    =========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
